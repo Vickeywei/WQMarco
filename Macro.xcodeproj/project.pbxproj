@@ -51,6 +51,7 @@
 		3EAB51FF1D365D3800408B82 /* MacroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAB52031D365D3800408B82 /* MacroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacroUITests.m; sourceTree = "<group>"; };
 		3EAB52051D365D3800408B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EAB52111D365D5C00408B82 /* WQmacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQmacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 				3EAB51E21D365D3700408B82 /* AppDelegate.m */,
 				3EAB51E41D365D3700408B82 /* ViewController.h */,
 				3EAB51E51D365D3700408B82 /* ViewController.m */,
+				3EAB52111D365D5C00408B82 /* WQmacro.h */,
 				3EAB51E71D365D3700408B82 /* Main.storyboard */,
 				3EAB51EA1D365D3800408B82 /* Assets.xcassets */,
 				3EAB51EC1D365D3800408B82 /* LaunchScreen.storyboard */,

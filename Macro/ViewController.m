@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WQmacro.h"
 @interface ViewController ()
 
 @end
