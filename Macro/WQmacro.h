@@ -6,11 +6,6 @@
 //  Copyright © 2016年 com.drcacom.com. All rights reserved.
 //
 
-#ifndef WQmacro_h
-#define WQmacro_h
-
-
-#endif /* WQmacro_h */
 //获取屏幕宽度与高度
 #define SCREEEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define SCREEEN_HEIGHT [UIScreen mainScreen].bounds.size.height
