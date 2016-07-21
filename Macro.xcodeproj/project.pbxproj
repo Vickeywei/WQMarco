@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E3177CA1D40F5700043D2A3 /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3177C91D40F5700043D2A3 /* UIBarButtonItem+item.m */; };
+		3E3177CD1D40F57A0043D2A3 /* MBProgressHUD+WQTextHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3177CC1D40F57A0043D2A3 /* MBProgressHUD+WQTextHud.m */; };
+		3E3177D01D40F6250043D2A3 /* UIImage+Thumbnails.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3177CF1D40F6250043D2A3 /* UIImage+Thumbnails.m */; };
+		3E3177D31D40F6610043D2A3 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3177D21D40F6610043D2A3 /* NSString+Size.m */; };
 		3EAB51E01D365D3700408B82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51DF1D365D3700408B82 /* main.m */; };
 		3EAB51E31D365D3700408B82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51E21D365D3700408B82 /* AppDelegate.m */; };
 		3EAB51E61D365D3700408B82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51E51D365D3700408B82 /* ViewController.m */; };
@@ -15,6 +19,7 @@
 		3EAB51EE1D365D3800408B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAB51EC1D365D3800408B82 /* LaunchScreen.storyboard */; };
 		3EAB51F91D365D3800408B82 /* MacroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51F81D365D3800408B82 /* MacroTests.m */; };
 		3EAB52041D365D3800408B82 /* MacroUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB52031D365D3800408B82 /* MacroUITests.m */; };
+		99A4D7208CC105B7B730D989 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F02A45CA16E72888EF9423 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E3177C81D40F5700043D2A3 /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
+		3E3177C91D40F5700043D2A3 /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
+		3E3177CB1D40F57A0043D2A3 /* MBProgressHUD+WQTextHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+WQTextHud.h"; sourceTree = "<group>"; };
+		3E3177CC1D40F57A0043D2A3 /* MBProgressHUD+WQTextHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+WQTextHud.m"; sourceTree = "<group>"; };
+		3E3177CE1D40F6250043D2A3 /* UIImage+Thumbnails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Thumbnails.h"; sourceTree = "<group>"; };
+		3E3177CF1D40F6250043D2A3 /* UIImage+Thumbnails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Thumbnails.m"; sourceTree = "<group>"; };
+		3E3177D11D40F6610043D2A3 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
+		3E3177D21D40F6610043D2A3 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
 		3EAB51DB1D365D3700408B82 /* Macro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAB51DF1D365D3700408B82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3EAB51E11D365D3700408B82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +65,9 @@
 		3EAB52031D365D3800408B82 /* MacroUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacroUITests.m; sourceTree = "<group>"; };
 		3EAB52051D365D3800408B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EAB52111D365D5C00408B82 /* WQmacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WQmacro.h; sourceTree = "<group>"; };
+		58B0A0A1974565BA5E0FA727 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		70F02A45CA16E72888EF9423 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB99BC84012BE267ECD14EF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99A4D7208CC105B7B730D989 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +103,8 @@
 				3EAB51F71D365D3800408B82 /* MacroTests */,
 				3EAB52021D365D3800408B82 /* MacroUITests */,
 				3EAB51DC1D365D3700408B82 /* Products */,
+				B6BB690D984CD31B4A298B9B /* Pods */,
+				74DF129659907902680C02B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +126,14 @@
 				3EAB51E41D365D3700408B82 /* ViewController.h */,
 				3EAB51E51D365D3700408B82 /* ViewController.m */,
 				3EAB52111D365D5C00408B82 /* WQmacro.h */,
+				3E3177C81D40F5700043D2A3 /* UIBarButtonItem+item.h */,
+				3E3177C91D40F5700043D2A3 /* UIBarButtonItem+item.m */,
+				3E3177CB1D40F57A0043D2A3 /* MBProgressHUD+WQTextHud.h */,
+				3E3177CC1D40F57A0043D2A3 /* MBProgressHUD+WQTextHud.m */,
+				3E3177D11D40F6610043D2A3 /* NSString+Size.h */,
+				3E3177D21D40F6610043D2A3 /* NSString+Size.m */,
+				3E3177CE1D40F6250043D2A3 /* UIImage+Thumbnails.h */,
+				3E3177CF1D40F6250043D2A3 /* UIImage+Thumbnails.m */,
 				3EAB51E71D365D3700408B82 /* Main.storyboard */,
 				3EAB51EA1D365D3800408B82 /* Assets.xcassets */,
 				3EAB51EC1D365D3800408B82 /* LaunchScreen.storyboard */,
@@ -142,6 +169,23 @@
 			path = MacroUITests;
 			sourceTree = "<group>";
 		};
+		74DF129659907902680C02B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70F02A45CA16E72888EF9423 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6BB690D984CD31B4A298B9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58B0A0A1974565BA5E0FA727 /* Pods.debug.xcconfig */,
+				CAB99BC84012BE267ECD14EF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EAB52081D365D3800408B82 /* Build configuration list for PBXNativeTarget "Macro" */;
 			buildPhases = (
+				22F3E1900C6F88697219F100 /* Check Pods Manifest.lock */,
 				3EAB51D71D365D3700408B82 /* Sources */,
 				3EAB51D81D365D3700408B82 /* Frameworks */,
 				3EAB51D91D365D3700408B82 /* Resources */,
+				37ABDE98DC3F399ECEC44394 /* Embed Pods Frameworks */,
+				3D86E439E6F9017FD294EE93 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,14 +314,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22F3E1900C6F88697219F100 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		37ABDE98DC3F399ECEC44394 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D86E439E6F9017FD294EE93 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3EAB51D71D365D3700408B82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3EAB51E61D365D3700408B82 /* ViewController.m in Sources */,
+				3E3177CA1D40F5700043D2A3 /* UIBarButtonItem+item.m in Sources */,
+				3E3177D01D40F6250043D2A3 /* UIImage+Thumbnails.m in Sources */,
 				3EAB51E31D365D3700408B82 /* AppDelegate.m in Sources */,
+				3E3177D31D40F6610043D2A3 /* NSString+Size.m in Sources */,
 				3EAB51E01D365D3700408B82 /* main.m in Sources */,
+				3E3177CD1D40F57A0043D2A3 /* MBProgressHUD+WQTextHud.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +514,7 @@
 		};
 		3EAB52091D365D3800408B82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B0A0A1974565BA5E0FA727 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Macro/Info.plist;
@@ -426,6 +526,7 @@
 		};
 		3EAB520A1D365D3800408B82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAB99BC84012BE267ECD14EF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Macro/Info.plist;
@@ -500,6 +601,7 @@
 				3EAB520A1D365D3800408B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EAB520B1D365D3800408B82 /* Build configuration list for PBXNativeTarget "MacroTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +610,7 @@
 				3EAB520D1D365D3800408B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EAB520E1D365D3800408B82 /* Build configuration list for PBXNativeTarget "MacroUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +619,7 @@
 				3EAB52101D365D3800408B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

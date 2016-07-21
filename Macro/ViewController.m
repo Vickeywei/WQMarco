@@ -9,6 +9,10 @@
 #import "ViewController.h"
 #import "WQmacro.h"
 @interface ViewController ()
+@property(nonatomic, assign) NSInteger i;
+@property(nonatomic, copy) void(^blcok)(void);
+
+
 
 @end
 
@@ -16,8 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
