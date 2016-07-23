@@ -11,6 +11,7 @@
 		3E3177CD1D40F57A0043D2A3 /* MBProgressHUD+WQTextHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3177CC1D40F57A0043D2A3 /* MBProgressHUD+WQTextHud.m */; };
 		3E3177D01D40F6250043D2A3 /* UIImage+Thumbnails.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3177CF1D40F6250043D2A3 /* UIImage+Thumbnails.m */; };
 		3E3177D31D40F6610043D2A3 /* NSString+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3177D21D40F6610043D2A3 /* NSString+Size.m */; };
+		3E3178681D4388840043D2A3 /* c0b3760ffb94558ac73f66b1dfd81ad1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3178671D4388840043D2A3 /* c0b3760ffb94558ac73f66b1dfd81ad1.png */; };
 		3EAB51E01D365D3700408B82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51DF1D365D3700408B82 /* main.m */; };
 		3EAB51E31D365D3700408B82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51E21D365D3700408B82 /* AppDelegate.m */; };
 		3EAB51E61D365D3700408B82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51E51D365D3700408B82 /* ViewController.m */; };
@@ -48,6 +49,7 @@
 		3E3177CF1D40F6250043D2A3 /* UIImage+Thumbnails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Thumbnails.m"; sourceTree = "<group>"; };
 		3E3177D11D40F6610043D2A3 /* NSString+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Size.h"; sourceTree = "<group>"; };
 		3E3177D21D40F6610043D2A3 /* NSString+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Size.m"; sourceTree = "<group>"; };
+		3E3178671D4388840043D2A3 /* c0b3760ffb94558ac73f66b1dfd81ad1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c0b3760ffb94558ac73f66b1dfd81ad1.png; sourceTree = "<group>"; };
 		3EAB51DB1D365D3700408B82 /* Macro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAB51DF1D365D3700408B82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3EAB51E11D365D3700408B82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				3E3177D21D40F6610043D2A3 /* NSString+Size.m */,
 				3E3177CE1D40F6250043D2A3 /* UIImage+Thumbnails.h */,
 				3E3177CF1D40F6250043D2A3 /* UIImage+Thumbnails.m */,
+				3E3178671D4388840043D2A3 /* c0b3760ffb94558ac73f66b1dfd81ad1.png */,
 				3EAB51E71D365D3700408B82 /* Main.storyboard */,
 				3EAB51EA1D365D3800408B82 /* Assets.xcassets */,
 				3EAB51EC1D365D3800408B82 /* LaunchScreen.storyboard */,
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EAB51EE1D365D3800408B82 /* LaunchScreen.storyboard in Resources */,
+				3E3178681D4388840043D2A3 /* c0b3760ffb94558ac73f66b1dfd81ad1.png in Resources */,
 				3EAB51EB1D365D3800408B82 /* Assets.xcassets in Resources */,
 				3EAB51E91D365D3800408B82 /* Main.storyboard in Resources */,
 			);

@@ -155,5 +155,5 @@
 #define UserDefaults  [NSUserDefaults standardUserDefaults]
 
 //适配6plus/6splus字体大小
-#define AdapterSize(value)  ((ScreenWidth > 375) ? (ScreenWidth / 375 * value) : value)
-#define AdapterSizeFromIphone6(value)  (ScreenWidth / 375.0 * value)
+#define AdapterSize(value)  ((SCREEEN_WIDTH > 375) ? (SCREEEN_WIDTH / 375 * value) : value)
+#define AdapterSizeFromIphone6(value)  (SCREEEN_WIDTH / 375.0 * value)

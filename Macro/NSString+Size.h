@@ -10,10 +10,10 @@
 #import <UIKit/UIKit.h>
 @interface NSString (Size)
 /**
- *  获取文本内容的大小
+ *  @author vicky 2016-07-23 18:31
  *
  *  @param font  字体
- *  @param width 预设宽度
+ *  @param width 预设宽度(显示文本控件的宽度)
  *
  *  @return 返回文本内容的大小
  */

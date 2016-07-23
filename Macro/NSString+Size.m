@@ -10,7 +10,7 @@
 
 @implementation NSString (Size)
 - (CGSize)boundStringSizeWithFont:(UIFont *)font width:(CGFloat)width {
-    CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{@"font":font} context:nil];
+    CGRect rect = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil];
     return rect.size;
 }
 
