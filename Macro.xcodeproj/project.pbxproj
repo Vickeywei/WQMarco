@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EAB51E01D365D3700408B82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51DF1D365D3700408B82 /* main.m */; };
 		3EAB51E91D365D3800408B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAB51E71D365D3700408B82 /* Main.storyboard */; };
 		3EAB51EB1D365D3800408B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAB51EA1D365D3800408B82 /* Assets.xcassets */; };
 		3EAB51EE1D365D3800408B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAB51EC1D365D3800408B82 /* LaunchScreen.storyboard */; };
@@ -34,7 +33,6 @@
 
 /* Begin PBXFileReference section */
 		3EAB51DB1D365D3700408B82 /* Macro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EAB51DF1D365D3700408B82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3EAB51E81D365D3700408B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EAB51EA1D365D3800408B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EAB51ED1D365D3800408B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 		3EAB51DE1D365D3700408B82 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3EAB51DF1D365D3700408B82 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -262,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EAB51E01D365D3700408B82 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
