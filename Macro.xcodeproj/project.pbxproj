@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3EAB51E01D365D3700408B82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51DF1D365D3700408B82 /* main.m */; };
-		3EAB51E31D365D3700408B82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51E21D365D3700408B82 /* AppDelegate.m */; };
-		3EAB51E61D365D3700408B82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EAB51E51D365D3700408B82 /* ViewController.m */; };
 		3EAB51E91D365D3800408B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAB51E71D365D3700408B82 /* Main.storyboard */; };
 		3EAB51EB1D365D3800408B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EAB51EA1D365D3800408B82 /* Assets.xcassets */; };
 		3EAB51EE1D365D3800408B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EAB51EC1D365D3800408B82 /* LaunchScreen.storyboard */; };
@@ -37,10 +35,6 @@
 /* Begin PBXFileReference section */
 		3EAB51DB1D365D3700408B82 /* Macro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EAB51DF1D365D3700408B82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3EAB51E11D365D3700408B82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3EAB51E21D365D3700408B82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3EAB51E41D365D3700408B82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3EAB51E51D365D3700408B82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3EAB51E81D365D3700408B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EAB51EA1D365D3800408B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EAB51ED1D365D3800408B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,10 +96,6 @@
 		3EAB51DD1D365D3700408B82 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
-				3EAB51E11D365D3700408B82 /* AppDelegate.h */,
-				3EAB51E21D365D3700408B82 /* AppDelegate.m */,
-				3EAB51E41D365D3700408B82 /* ViewController.h */,
-				3EAB51E51D365D3700408B82 /* ViewController.m */,
 				3EAB52111D365D5C00408B82 /* WQmacro.h */,
 				3EAB51E71D365D3700408B82 /* Main.storyboard */,
 				3EAB51EA1D365D3800408B82 /* Assets.xcassets */,
@@ -272,8 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EAB51E61D365D3700408B82 /* ViewController.m in Sources */,
-				3EAB51E31D365D3700408B82 /* AppDelegate.m in Sources */,
 				3EAB51E01D365D3700408B82 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +488,7 @@
 				3EAB520A1D365D3800408B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EAB520B1D365D3800408B82 /* Build configuration list for PBXNativeTarget "MacroTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +497,7 @@
 				3EAB520D1D365D3800408B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EAB520E1D365D3800408B82 /* Build configuration list for PBXNativeTarget "MacroUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +506,7 @@
 				3EAB52101D365D3800408B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
