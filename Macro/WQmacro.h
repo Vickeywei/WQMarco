@@ -11,9 +11,40 @@
 
 
 #endif /* WQmacro_h */
+//中文字体
+#define CHINESE_FONT_NAME @"Heiti SC"
+#define CHINESE_SYSTEM(x) [UIFont fontWithName:CHINESE_FONT_NAME size:x]
+
+//支持横屏
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 // 当前Xcode支持iOS8及以上
+#define SCREEN_WIDTH ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.width)
+#define SCREENH_HEIGHT ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale:[UIScreen mainScreen].bounds.size.height)
+#define SCREEN_SIZE ([[UIScreen mainScreen] respondsToSelector:@selector(nativeBounds)]?CGSizeMake([UIScreen mainScreen].nativeBounds.size.width/[UIScreen mainScreen].nativeScale,[UIScreen mainScreen].nativeBounds.size.height/[UIScreen mainScreen].nativeScale):[UIScreen mainScreen].bounds.size)
+#else
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENH_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+#endif
+
+//不同屏幕尺寸字体适配（320，568是因为效果图为IPHONE5 如果不是则根据实际情况修改）
+#define kScreenWidthRatio  (SCREEN_WIDTH / 320.0)
+#define kScreenHeightRatio (SCREEN_HEIGHT / 568.0)
+#define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
+#define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
+#define kFontSize(R)     CHINESE_SYSTEM(AdaptedWidth(R))
+
+#define UNICODETOUTF16(x) (((((x - 0x10000) >>10) | 0xD800) << 16)  | (((x-0x10000)&3FF) | 0xDC00))
+#define MULITTHREEBYTEUTF16TOUNICODE(x,y) (((((x ^ 0xD800) << 2) | ((y ^ 0xDC00) >> 8)) << 8) | ((y ^ 0xDC00) & 0xFF)) + 0x10000
+
 //获取屏幕宽度与高度
 #define SCREEEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define SCREEEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+// 字体大小(常规/粗体)
+#define BOLDSYSTEMFONT(FONTSIZE)[UIFont boldSystemFontOfSize:FONTSIZE]
+#define SYSTEMFONT(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
+#define FONT(NAME, FONTSIZE)    [UIFont fontWithName:(NAME) size:(FONTSIZE)]
+
 //获取导航栏高度/电池条/tabbar高度
 #define NavBarHeight                        self.navigationController.navigationBar.bounds.size.height
 #define StatusBarHeight                     20
@@ -98,6 +129,17 @@
 //判断 iOS 8 或更高的系统版本
 #define IOS_VERSION_8_OR_LATER (([[[UIDevice currentDevice] systemVersion] floatValue] >=8.0)? (YES):(NO))
 
+// 是否大于等于IOS7
+#define isIOS7                  ([[[UIDevice currentDevice]systemVersion]floatValue] >= 7.0)
+// 是否IOS6
+#define isIOS6                  ([[[UIDevice currentDevice]systemVersion]floatValue] < 7.0)
+// 是否大于等于IOS8
+#define isIOS8                  ([[[UIDevice currentDevice]systemVersion]floatValue] >=8.0)
+// 是否iPad
+#define isPad                   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+// 是否空对象
+#define IS_NULL_CLASS(OBJECT) [OBJECT isKindOfClass:[NSNull class]]
 
 //判断是真机还是模拟器
 #if TARGET_OS_IPHONE
@@ -138,6 +180,12 @@
 #define AppName [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
 #define DeviceMode [[UIDevice currentDevice] model]
 
+//AppDelegate对象
+#define AppDelegateInstance [[UIApplication sharedApplication] delegate]
+
+//获取图片资源
+#define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+
 // 设备版本
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
@@ -162,3 +210,36 @@
 //适配6plus/6splus字体大小
 #define AdapterSize(value)  ((ScreenWidth > 375) ? (ScreenWidth / 375 * value) : value)
 #define AdapterSizeFromIphone6(value)  (ScreenWidth / 375.0 * value)
+
+//MBProgressHUD
+// 加载
+#define kShowNetworkActivityIndicator() [UIApplication sharedApplication].networkActivityIndicatorVisible = YES
+// 收起加载
+#define HideNetworkActivityIndicator()      [UIApplication sharedApplication].networkActivityIndicatorVisible = NO
+// 设置加载
+#define NetworkActivityIndicatorVisible(x)  [UIApplication sharedApplication].networkActivityIndicatorVisible = x
+#define kWindow [UIApplication sharedApplication].keyWindow
+#define kBackView         for (UIView *item in kWindow.subviews) { \
+if(item.tag == 10000) \
+{ \
+[item removeFromSuperview]; \
+UIView * aView = [[UIView alloc] init]; \
+aView.frame = [UIScreen mainScreen].bounds; \
+aView.tag = 10000; \
+aView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3]; \
+[kWindow addSubview:aView]; \
+} \
+} \
+#define kShowHUDAndActivity kBackView;[MBProgressHUD showHUDAddedTo:kWindow animated:YES];kShowNetworkActivityIndicator()
+#define kHiddenHUD [MBProgressHUD hideAllHUDsForView:kWindow animated:YES]
+#define kRemoveBackView         for (UIView *item in kWindow.subviews) { \
+if(item.tag == 10000) \
+{ \
+[UIView animateWithDuration:0.4 animations:^{ \
+item.alpha = 0.0; \
+} completion:^(BOOL finished) { \
+[item removeFromSuperview]; \
+}]; \
+} \
+} \
+#define kHiddenHUDAndAvtivity kRemoveBackView;kHiddenHUD;HideNetworkActivityIndicator()
