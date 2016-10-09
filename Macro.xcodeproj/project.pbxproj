@@ -196,6 +196,8 @@
 				TargetAttributes = {
 					3EAB51DA1D365D3700408B82 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FUDEHHH283;
+						ProvisioningStyle = Automatic;
 					};
 					3EAB51F31D365D3800408B82 = {
 						CreatedOnToolsVersion = 7.3;
@@ -401,6 +403,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FUDEHHH283;
 				INFOPLIST_FILE = Macro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drcacom.com.Macro;
@@ -412,6 +416,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = FUDEHHH283;
 				INFOPLIST_FILE = Macro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.drcacom.com.Macro;

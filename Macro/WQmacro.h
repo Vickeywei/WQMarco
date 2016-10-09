@@ -63,12 +63,27 @@
 //设置clearColor
 #define WQClearColor [UIColor clearColor]
 
+//设置屏幕亮度
+#define WQDECVICEBrightness(brightness) [[UIScreen mainScreen] setBrightness:brightness];
+
+//设置屏幕常亮
+#define WQDECVICENormallyOn(isNornallyOn)   [[UIApplication sharedApplication] setIdleTimerDisabled:isNornallyOn];
+
 //按照十六进制设置颜色值
 #define WQHEXColor(c) [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:(c&0xFF)/255.0 alpha:1.0]
 
 //自定义NSLog
 #ifdef DEBUG 
 #define WQLog(...) NSLog(@"%s第%d行\n%@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define WQLog(...)
+#endif
+
+//Xcode8解决真机调试Log被屏蔽的问题
+#ifdef DEBUG
+#define WQString [NSString stringWithFormat:@"%s", __FILE__].lastPathComponent
+#define WQLog(...) printf("%s %s 第%d行: %s\n\n",__TIME__ ,[WQString UTF8String] ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String]);
+
 #else
 #define WQLog(...)
 #endif
